@@ -5,6 +5,7 @@ import { swaggerSpec } from './docs/swagger.js';
 import { limiter } from './middleware/rate-limiter.js';
 import authRoutes from './v1/components/authentication/auth.routes.js';
 import taskRoutes from './v1/components/tasks/tasks.routes.js';
+import adminRoutes from './v1/components/admin/admin.routes.js';
 
 const app = express();
 app.use(cors());
@@ -14,5 +15,6 @@ app.use(limiter);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use('/api/v1/auth', authRoutes);
 app.use("/api/v1/tasks", taskRoutes);
+app.use("/api/v1/admin", adminRoutes);
 
 export default app;
