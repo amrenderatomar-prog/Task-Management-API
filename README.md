@@ -131,6 +131,7 @@ npm start
 The server will start on `http://localhost:3000` (or your configured PORT).
 
 ## API Documentation
+## API Documentation
 
 Once the server is running, access the interactive Swagger documentation at:
 ```
