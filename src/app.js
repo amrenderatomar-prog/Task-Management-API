@@ -11,6 +11,11 @@ app.use(cors());
 app.use(express.json());
 app.use(limiter);
 
+//
+app.get('/', (req, res) => {
+  res.send('Welcome to the Task Management API ; move to /api-docs for API documentation.');
+});
+
 // doc api
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
