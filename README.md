@@ -30,7 +30,7 @@ A robust and scalable RESTful API for managing tasks with role-based access cont
   - Interactive Swagger UI documentation
   - Comprehensive endpoint descriptions
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Runtime:** Node.js
 - **Framework:** Express.js
@@ -130,7 +130,7 @@ npm start
 
 The server will start on `http://localhost:3000` (or your configured PORT).
 
-## 📚 API Documentation
+##  API Documentation
 
 Once the server is running, access the interactive Swagger documentation at:
 ```
@@ -171,7 +171,7 @@ The API uses JWT tokens for authentication. Include the access token in the Auth
 Authorization: Bearer <your_access_token>
 ```
 
-## 👥 User Roles
+##  User Roles
 
 - **User:** Can create, view, update, and delete their own tasks or tasks assigned to them
 - **Admin:** Has full access to all tasks and user management
