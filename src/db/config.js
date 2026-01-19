@@ -10,15 +10,15 @@ export const supabase = createClient(
 // Test database connection
 export const testConnection = async () => {
   try {
-    const { data, error } = await supabase.from('users').select('count', { count: 'exact', head: true });
+    const { error } = await supabase.from('users').select('count', { count: 'exact', head: true });
     if (error) {
-      console.log('❌ Supabase connection failed:', error.message);
+      console.log('Supabase connection failed:', error.message);
       return false;
     }
-    console.log('✅ Supabase connected successfully!');
+    console.log('Supabase connected successfully!');
     return true;
   } catch (err) {
-    console.log('❌ Supabase connection error:', err.message);
+    console.log('Supabase connection error:', err.message);
     return false;
   }
 };
